@@ -90,7 +90,7 @@ app.put("/projects/:projectId", (req, res) => {
 });
 
 app.delete("/projects/:projectId", (req, res) => {
-  projectDao.deleteProject(+req.params.projectId);
+  projectDao.deleteProject(req.params.projectId);
   res.sendStatus(200);
 });
 

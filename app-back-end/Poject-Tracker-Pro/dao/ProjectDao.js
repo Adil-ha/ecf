@@ -32,7 +32,7 @@ export class ProjectDao {
   }
 
   deleteProject(id) {
-    this.Projects = this.Projects.filter((project) => project.id !== id);
+    this.Projects = this.Projects.filter((project) => project.id != id);
     this.writeFile();
   }
 
